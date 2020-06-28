@@ -30,18 +30,31 @@ Things you may want to cover:
 |name|srting|index:true,null:false,unique:true|
 |email|string|null:false|
 |password|string|null: false|
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
 
 ### Association
-- has_many :names
+- has_many :groups, through :users
+
+
+## groupsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
+
+### Association
+- has_many :groups, through :users
 
 ## group_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_name|srting|index:true,null:false,unique:true|
-|chat_member|srting|index:true,null:false,unique:true|
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
 
 ### Association
-- has_many :group_names, through: chat_members
+- belongs_to :group
+- belongs_to :user
 
 ## chat_textテーブル
 |Column|Type|Options|
