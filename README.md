@@ -31,11 +31,17 @@ Things you may want to cover:
 |email|string|null:false|
 |password|string|null: false|
 
+### Association
+- has_many :names
+
 ## group_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |group_name|srting|index:true,null:false,unique:true|
 |chat_member|srting|index:true,null:false,unique:true|
+
+### Association
+- has_many :group_names, through: chat_members
 
 ## chat_textテーブル
 |Column|Type|Options|
@@ -48,5 +54,3 @@ Things you may want to cover:
 ### Association
 - belongs_to :group
 - belongs_to :user
-- has_many :group_names, through: chat_members
-- has_many :texts
