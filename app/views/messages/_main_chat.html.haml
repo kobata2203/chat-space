@@ -1,0 +1,30 @@
+.chat_main
+  .chat_main__group-info
+    .chat_header
+      .chat_header_group_name
+        test
+      .chat_header_memberlist
+        Member:masa
+    .chat_header_editbutton
+      = link_to "#" do
+        Edit
+  .chat_main__messeage-list
+    .chat_main__message-list_name1
+      masa
+    .chat_main__message-list_message1
+      おはよう！
+    .chat_main__message-list_name2
+      masa
+    .chat_main__message-list_message2
+      今日は夜から雨
+  .chat_main__messeage-form
+    .chat_main__message-form_form
+      .chat_main__message-form_form_messages
+        .form_inputcontent
+          type a message
+        .form_inputimage
+          = link_to "#" do
+            = icon('fas', 'image', class: 'icon')
+    .chat_main__message-form_submit
+      = link_to "#" do
+        Send
