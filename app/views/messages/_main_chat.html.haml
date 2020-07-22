@@ -23,8 +23,10 @@
         .form_inputcontent
           type a message
         .form_inputimage
-          = link_to "#" do
-            = icon('fas', 'image', class: 'icon')
+          %label{class: "input-box__image"}
+            = icon('fas', 'image')
+            .file_open
+              %input{type: "file"}
     .chat_main__message-form_submit
       = link_to "#" do
         Send
