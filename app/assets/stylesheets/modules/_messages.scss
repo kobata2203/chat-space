@@ -43,41 +43,41 @@
     }
   }
 
-  &__messeage-list {
+  .MessageField {
     width: calc(100vw - 300px);
     height: calc(100vh - 190px);
     background-color: #fafafa;
   }
 
-  .chat_main__message-list_name1 {
-    color: #333333;
-    font-size: 16px;
-    padding-top: 35px;
-    margin-left: 40px;
-  }
+  // .chat_main__message-list_name1 {
+  //   color: #333333;
+  //   font-size: 16px;
+  //   padding-top: 35px;
+  //   margin-left: 40px;
+  // }
 
-  .chat_main__message-list_message1 {
-    color: #434A54;
-    font-size: 14px;
-    margin-top: 12px;
-    margin: 40px;
-  }
+  // .chat_main__message-list_message1 {
+  //   color: #434A54;
+  //   font-size: 14px;
+  //   margin-top: 12px;
+  //   margin: 40px;
+  // }
 
-  .chat_main__message-list_name2 {
-    color: #333333;
-    font-size: 16px;
-    margin-top: 46px;
-    margin-left: 40px;
-  }
+  // .chat_main__message-list_name2 {
+  //   color: #333333;
+  //   font-size: 16px;
+  //   margin-top: 46px;
+  //   margin-left: 40px;
+  // }
 
-  .chat_main__message-list_message2 {
-    color: #434A54;
-    font-size: 14px;
-    margin-top: 12px;
-    margin-left: 40px;
-  }
+  // .chat_main__message-list_message2 {
+  //   color: #434A54;
+  //   font-size: 14px;
+  //   margin-top: 12px;
+  //   margin-left: 40px;
+  // }
 
-  &__messeage-form {
+  .Footer {
     width: calc(100vw - 300px);
     height: 90px;
     background-color: #d2d2d2;
@@ -85,18 +85,18 @@
     padding: 20px 50px 20px 40px;
   }
 
-    .chat_main__message-form_form {
+    .Form {
       display : flex;
       justify-content: space-between;
     }
 
-      .chat_main__message-form_form_messages {
+      .Form__contents {
         color: #ffffff;
         width: 100%;
         position: relative;
       }
 
-        .form_inputcontent {
+        .Form__inputContent {
           border: none;
           height: 50px;
           width: calc(100vw - 500px);
@@ -106,18 +106,22 @@
           line-height: 50px;
         }
 
-        .form_inputimage {
+        .Form__inputImage {
           height: 50px;
           position: absolute;
           right: 10px;
           top: 10px;
         }
 
-        .icon {
+        .Form__icon {
           color: #434A54;
         }
 
-    .chat_main__message-form_submit {
+        .Hidden {
+          display: none;
+        }
+
+    .Form__submit {
       background-color: #38AEF0;
       border: none;
       color: #fff;
